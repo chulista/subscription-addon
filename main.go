@@ -1,8 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"github.com/chulista/subscription-addon/cmd"
+)
 
 func main() {
-	fmt.Println("first commit")
+	application := cmd.NewApplication()
+	application.Run(":8080")
 }
-
